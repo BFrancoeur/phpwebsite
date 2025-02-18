@@ -1,0 +1,16 @@
+{
+    "name": "user/phpwebsite",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "User\\Phpwebsite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brian Francoeur",
+            "email": "francoeurbj@gmail.com"
+        }
+    ],
+    "require": {}
+}
