@@ -14,7 +14,6 @@ To create multiple portfolio pieces within the scope of a handful of projects th
   - Composer
   - PHP Frameworks
     - Laravel
-    - CakePHP
   - Node
     - NPM
     - Yarn
