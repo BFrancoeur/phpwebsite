@@ -1,0 +1,146 @@
+/* === Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Flexbox === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3cm;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.col-5 {
+    flex: 20%;
+}
+
+.col-6 {
+    flex: 16.66%;
+}
+
+/* === Media Queries === */
+@media screen and (min-width: 360px) {
+    .body   {
+        width: 100%; 
+        margin: 0 auto;
+        text-align: center;   
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    /* .col {
+        flex: 100%;
+    } */
+
+    .site-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .logo {
+        flex: 1;
+        max-width: 40%;
+        justify-content: center;
+    }
+} 
+
+@media screen and (min-width: 768px) {
+    /* .col {
+        flex: 50%;
+    } */
+} 
+
+
+@media screen and (min-width: 1024px) {
+    /* .col {
+        flex: 33.33%;
+    } */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* .col {
+        flex: 25%;
+    } */
+}
+
+
+
+/* === Layout === */
+.body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.padding-10px-all {
+    padding: 10px;
+}
+
+.padding-15px-all {
+    padding: 15px;
+}
+
+.padding-20px-all {
+    padding: 20px;
+}
+
+.padding-30px-all {
+    padding: 30px;
+}
+
+.padding-40px-all {
+    padding: 40px;
+}
+
+.padding-50px-all {
+    padding: 50px;
+}
+
+.padding-60px-all { 
+    padding: 60px;
+}
+
+
+/* === Colors === */
+:root {
+    --primary-color: #E3D2C0;
+    --secondary-color: #E3D2C0;
+    --tertiary-color: #E3D2C0;
+}
+
+body {
+    background-color: #E3D2C0;
+}
+
+
+
