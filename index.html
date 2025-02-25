@@ -8,23 +8,63 @@
     <title>PHP Website</title>
 </head>
 <body class="body">
-        <header class="container padding-20px-all">
+        <header class="container">
             <!-- 3 column layout for desktop -->
             <!-- 1 column layout for mobile -->
-                <div class="row">
-                    <div class="col">
-                        <a href="/">
+                <div class="row flex-dir-col">
+                    <div class="col bg-color-white">
+                        <a href="/" class="padding-20px-all width-100-pct">
                             <img class="logo" src="./images/logoipsum-364.svg" alt="logoipsum">
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div id="phone" class="col padding-10px-all">icon</div>
-                    <div id="mobile-nav" class="col padding-10px-all">icon</div>
+                <div class="row flex-dir-row">
+                    <div id="phone" class="col padding-10px-all bg-accent-color-1">
+                        <a href="phone:555-222-1212" class="icon-link">
+                            <img src="./images/phone-icon.png" alt="" class="icon-img">
+                        </a>
+                    </div>
+                    <div id="mobile-nav-menu" class="col padding-10px-all bg-tertiary-color h-center show">
+                        <a href="#" class="icon-link">
+                            <img src="./images/menu-icon.png" alt="" class="icon-img">
+                        </a>
+                    </div>
+                    <div id="mobile-nav-close" class="col padding-10px-all bg-color-white h-center hidden">
+                        <a href="#" class="icon-link">
+                            <img src="./images/close-icon.png" alt="" class="icon-img">
+                        </a>
+                    </div>
                 </div>
+
+                <!-- mobile nav -->
+                <nav class="mobile-nav container">
+                    <ul class="mobile-nav-menu row flex-dir-col padding-20px-all hidden">
+                        <li class="mobile-menu-item flex-1">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="mobile-menu-item flex-1">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="mobile-menu-item flex-1">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="mobile-menu-item flex-1">
+                            <a href="#"><img src="./images/search-icon.png" alt="" class="icon-img"></a>
+                        </li>
+                    </ul>
+                </nav>
         </header>
     <div class="container">
-        <main></main>
+        <main class="row flex-dir-col">
+            <div class="banner pos-relative bg-home-banner z-index-0">
+                <div class="home-banner-shade pos-absolute padding-30px-all z-index-1 top-0 left-0">
+                    <h1 id="home-banner-cta" class="h1-heading pos-absolute text-align-left z-index-2">Take </br>Action </br>Now!</h1>
+                    <h4 class="home-banner-cta-description text-align-left z-index-2">Or you'll miss out!</h4>
+                    <button href="#" class="btn cta-button-default hidden">Learn More</button>
+                    <button href="#" class="btn cta-button-hover show">Learn More</button>
+                </div>
+            </div>
+        </main>
     </div>
     <div class="container">
         <footer></footer>

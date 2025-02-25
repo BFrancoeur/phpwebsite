@@ -42,17 +42,25 @@
     flex: 16.66%;
 }
 
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
 /* === Media Queries === */
 @media screen and (min-width: 360px) {
     .body   {
         width: 100%; 
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;   
     }
 
     .row {
         display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
     }
 
@@ -102,6 +110,10 @@
     margin: 0 auto;
 }
 
+.width-100-pct {
+    width: 100%;
+}
+
 .padding-10px-all {
     padding: 10px;
 }
@@ -130,17 +142,252 @@
     padding: 60px;
 }
 
-
+.padding-top-100-pct {
+    padding-top: 100%;
+}
 /* === Colors === */
 :root {
     --primary-color: #E3D2C0;
-    --secondary-color: #E3D2C0;
-    --tertiary-color: #E3D2C0;
+    --secondary-color: #FFE9D3;
+    --tertiary-color: #E17E32;
+    --accent-color-1: #FF9F46;
+    --accent-color-2: #514941;
+    --accent-color-3: #2BFFE6;  
+    --neutral-color-white: #fff;
+    --neurtal-color-black: #000;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.tertiary-color {
+    color: var(--tertiary-color);
+}
+
+.accent-color-1 {
+    color: var(--accent-color-1);
+}
+
+.accent-color-2 {
+    color: var(--accent-color-2);
+}
+
+.accent-color-3 {
+    color: var(--accent-color-3);
+}
+
+.color-white {
+    color: var(--neutral-color-white);
+}
+
+.color-black {
+    color: var(--neurtal-color-black);
+}
+
+.bg-primary-color {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.bg-tertiary-color {
+    background-color: var(--tertiary-color);
+}
+
+.bg-accent-color-1 {
+    background-color: var(--accent-color-1);
+}
+
+.bg-accent-color-2 {
+    background-color: var(--accent-color-2);
+}
+
+.bg-accent-color-3 {
+    background-color: var(--accent-color-3);
+}
+
+.bg-color-white {
+    background-color: #ffffff;
+}
+
+.bg-color-black {
+    background-color: #000000;
 }
 
 body {
-    background-color: #E3D2C0;
+    background-color: var(--primary-color);
+}
+
+/* === Site Header === */
+.site-header {
+
+}
+
+.site-header > .col:first {
+    background-color: var(--accent-color-1);
+}
+
+.site-header > .col-last {
+    background-color: var(--accent-color-2);
+}
+
+.icon-img {
+    width: 100%;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.hidden {
+    display: none;  
+}
+
+.show {
+    display: flex;
+}
+
+.h-center {
+    justify-content: center;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--neutral-color-white);
+    border: none;
+}
+
+.mobile-nav-menu {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+
+.mobile-nav-mneu > .mobile-nav-menu-item {
+    width: 100%;
+    background-color: var(--neutral-color-white);
+}
+
+ul > li > a:-webkit-any-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--neutral-color-black);
+    padding:20px;
+}
+
+ul > li > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--neutral-color-black);
+    padding: 30px;
+    transition: .2s ease-in-out;
+    border-bottom: 1px solid var(--accent-color-1);
+}
+
+ul > li > a:hover {
+    background-color: var(--accent-color-1);
+}
+
+::marker {
+    content: none;
+}
+
+/* === Site Main === */
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.home-banner-shade {
+    min-height: 360px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-home-banner {
+    min-height: 360px;
+    background-image: url(./images/home-banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.h1-heading {
+    font-size: 3rem;
+    color: var(--neutral-color-white);
+}
+
+.home-banner-cta-description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--neutral-color-white);
+}
+
+.z-index-0 {
+    z-index: 0;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
 }
 
 
+.btn {
+    width: 141px;
+    height: 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 0;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
 
+.cta-button-default {
+    background-color: var(--accent-color-3);
+    color: var(--neutral-color-black);
+}
+
+a.cta-button:hover {
+    background-color: var(--neutral-color-white);
+    color: var(--neutral-color-black);
+}
